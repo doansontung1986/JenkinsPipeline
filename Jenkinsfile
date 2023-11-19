@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
           steps {
-            echo 'Testing application'
+            echo 'Testing application ${ChromeDriverPath}'
           }
         }
 
@@ -24,5 +24,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    ChromeDriverPath = '/usr/local/bin'
   }
 }
