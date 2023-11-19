@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
           steps {
-            echo 'Testing application ${ChromeDriverPath}'
+            echo "Testing application ${ChromeDriverPath}"
           }
         }
 
